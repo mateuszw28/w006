@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosty kalkulator</title>
+    <script>
+        function suma() {
+            var a = parsefloat(document.getElementById("a").value);
+            var b = parsefloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a + b;
+        }
+    </script>
+
+    <script>
+        function suma() {
+            var a = parsefloat(document.getElementById("a").value);
+            var b = parsefloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a - b;
+        }
+    </script>
+
+    <script>
+        function suma() {
+            var a = parsefloat(document.getElementById("a").value);
+            var b = parsefloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a * b;
+        }
+    </script>
+
+    <script>
+        function suma() {
+            var a = parsefloat(document.getElementById("a").value);
+            var b = parsefloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a / b;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Prosty kalkulator</h1>
+    <h2>=================</h2>
+    <input type="text" id="a" value="0" dir="rtl">
+    <input type="text" id="b" value="0" dir="rtl">
+
+    <div id="wynik">Tu będzie wynik</div>
+    <button oneclick="suma()">+</button>
+    <button oneclick="suma()">-</button>
+    <button oneclick="suma()">*</button>
+    <button oneclick="suma()">/</button>
+
+
+</body>
+
+</html>
